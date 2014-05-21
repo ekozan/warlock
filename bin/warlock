@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+process.title = 'Warlock';
+
+var warlock = require('../lib/warlock');
+
+warlock.start(function (err) {
+  if (!err) {
+    warlock.log.info('Spell cast'.grey + ' critical strike'.green.bold);
+  }
+  process.exit(err ? 1 : 0);
+});
