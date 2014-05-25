@@ -1,6 +1,6 @@
 {
   "name": "warlock-server",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "description": "Pm2 deployer for private server",
   "main": "index.js",
   "dependencies": {
@@ -8,11 +8,14 @@
     "flatiron": "^0.3.11",
     "colors": "^0.6.2",
     "pkginfo": "^0.3.0",
-    "flatiron-cli-config": "^0.1.4"
+    "flatiron-cli-config": "^0.1.4",
+    "ssh2": "^0.2.23",
+    "back": "^0.1.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bin/warlock"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/ekozan/pm2-warlock/issues"
   },
-  "homepage": "https://github.com/ekozan/pm2-warlock"
+  "homepage": "https://github.com/ekozan/pm2-warlock",
+  "subdomain": "ekozan-warlock",
+  "engines": {
+    "node": "0.10.x"
+  }
 }
