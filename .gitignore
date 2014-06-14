@@ -25,4 +25,4 @@ build/Release
 node_modules
 
 .DS_Store
-mpm-debug.logs
+mpm-debug.log
